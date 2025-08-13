@@ -241,35 +241,6 @@ body {
 
 .profile-photo-container {
     position: relative;
-    cursor: pointer;
-}
-
-.click-me-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(99, 102, 241, 0.8);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: var(--transition);
-    pointer-events: none;
-}
-
-.profile-photo-container:hover .click-me-overlay {
-    opacity: 1;
-}
-
-.click-me-text {
-    color: white;
-    font-weight: bold;
-    font-size: 0.875rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    animation: pulse 2s infinite;
 }
 
 .profile-photo-placeholder {
