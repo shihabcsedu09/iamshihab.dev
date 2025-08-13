@@ -30,9 +30,11 @@ function showJurassicParkMeme() {
     memeOverlay.className = 'meme-overlay';
     memeOverlay.innerHTML = `
         <div class="meme-content">
+            <div class="meme-avatar">
+                <img src="assets/chandler.svg" alt="Chandler Bing" class="chandler-photo">
+            </div>
             <div class="meme-text">
                 <h2>COULD I BE ANY MORE AWESOME?</h2>
-                <p>"You found the Easter egg" - Shihab Rahman</p>
             </div>
             <div class="meme-close">×</div>
         </div>
@@ -62,6 +64,26 @@ function showJurassicParkMeme() {
         position: relative;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
         animation: memeContentAppear 0.5s ease-out 0.2s both;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    `;
+    
+    const memeAvatar = memeOverlay.querySelector('.meme-avatar');
+    memeAvatar.style.cssText = `
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0.5rem;
+    `;
+    
+    const chandlerPhoto = memeOverlay.querySelector('.chandler-photo');
+    chandlerPhoto.style.cssText = `
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     `;
     
     const memeText = memeOverlay.querySelector('.meme-text');
