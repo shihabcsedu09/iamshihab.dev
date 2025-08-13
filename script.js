@@ -31,8 +31,8 @@ function showJurassicParkMeme() {
     memeOverlay.innerHTML = `
         <div class="meme-content">
             <div class="meme-text">
-                <h2>WELCOME TO JURASSIC PARK</h2>
-                <p>"Life finds a way" - Shihab Rahman</p>
+                <h2>CLEVER GIRL</h2>
+                <p>"You found the Easter egg" - Shihab Rahman</p>
             </div>
             <div class="meme-close">×</div>
         </div>
@@ -143,8 +143,8 @@ function showJurassicParkMeme() {
     document.body.appendChild(memeOverlay);
     
     // Console message
-    console.log('%c🦖 WELCOME TO JURASSIC PARK! 🦖', 'color: #6366f1; font-size: 24px; font-weight: bold;');
-    console.log('%c🌿 Life finds a way...', 'color: #8b5cf6; font-size: 16px;');
+    console.log('%c🦖 CLEVER GIRL! 🦖', 'color: #6366f1; font-size: 24px; font-weight: bold;');
+    console.log('%c🎯 You found the Easter egg...', 'color: #8b5cf6; font-size: 16px;');
 }
 
 // Fun facts interaction
