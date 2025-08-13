@@ -13,18 +13,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Profile photo Jurassic Park meme
+// Profile photo Chandler meme
 function initProfilePhotoMeme() {
     const profilePhoto = document.getElementById('profile-photo');
+    const profileContainer = document.querySelector('.profile-photo-container');
     
-    if (profilePhoto) {
-        profilePhoto.addEventListener('click', function() {
-            showJurassicParkMeme();
+    // Add click to the container as backup
+    if (profileContainer) {
+        profileContainer.addEventListener('click', function() {
+            console.log('Profile container clicked!');
+            showChandlerMeme();
         });
     }
+    
+    // Also add click to the photo if it exists
+    if (profilePhoto) {
+        profilePhoto.addEventListener('click', function(e) {
+            console.log('Profile photo clicked!');
+            e.stopPropagation(); // Prevent double triggering
+            showChandlerMeme();
+        });
+    }
+    
+    console.log('Profile photo meme initialized');
+    console.log('Profile photo element:', profilePhoto);
+    console.log('Profile container element:', profileContainer);
 }
 
-function showJurassicParkMeme() {
+function showChandlerMeme() {
     // Create meme overlay
     const memeOverlay = document.createElement('div');
     memeOverlay.className = 'meme-overlay';
