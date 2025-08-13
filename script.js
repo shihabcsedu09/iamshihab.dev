@@ -31,7 +31,7 @@ function showJurassicParkMeme() {
     memeOverlay.innerHTML = `
         <div class="meme-content">
             <div class="meme-text">
-                <h2>CLEVER GIRL</h2>
+                <h2>COULD I BE ANY MORE AWESOME?</h2>
                 <p>"You found the Easter egg" - Shihab Rahman</p>
             </div>
             <div class="meme-close">×</div>
@@ -71,10 +71,10 @@ function showJurassicParkMeme() {
     `;
     
     memeText.querySelector('h2').style.cssText = `
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 0 0 1rem 0;
         text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        animation: jurassicText 2s infinite;
+        animation: chandlerText 2s infinite;
     `;
     
     memeText.querySelector('p').style.cssText = `
@@ -121,7 +121,7 @@ function showJurassicParkMeme() {
             }
         }
         
-        @keyframes jurassicText {
+        @keyframes chandlerText {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
         }
@@ -143,7 +143,7 @@ function showJurassicParkMeme() {
     document.body.appendChild(memeOverlay);
     
     // Console message
-    console.log('%c🦖 CLEVER GIRL! 🦖', 'color: #6366f1; font-size: 24px; font-weight: bold;');
+    console.log('%c😎 COULD I BE ANY MORE AWESOME? 😎', 'color: #6366f1; font-size: 24px; font-weight: bold;');
     console.log('%c🎯 You found the Easter egg...', 'color: #8b5cf6; font-size: 16px;');
 }
 
