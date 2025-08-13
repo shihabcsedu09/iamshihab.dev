@@ -31,8 +31,8 @@ function showJurassicParkMeme() {
     memeOverlay.innerHTML = `
         <div class="meme-content">
             <div class="meme-text">
-                <h2>HACK THE PLANET!</h2>
-                <p>"I'm in" - Shihab Rahman</p>
+                <h2>WELCOME TO JURASSIC PARK</h2>
+                <p>"Life finds a way" - Shihab Rahman</p>
             </div>
             <div class="meme-close">×</div>
         </div>
@@ -71,10 +71,10 @@ function showJurassicParkMeme() {
     `;
     
     memeText.querySelector('h2').style.cssText = `
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 0 0 1rem 0;
         text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        animation: hackText 2s infinite;
+        animation: jurassicText 2s infinite;
     `;
     
     memeText.querySelector('p').style.cssText = `
@@ -121,7 +121,7 @@ function showJurassicParkMeme() {
             }
         }
         
-        @keyframes hackText {
+        @keyframes jurassicText {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
         }
@@ -143,8 +143,8 @@ function showJurassicParkMeme() {
     document.body.appendChild(memeOverlay);
     
     // Console message
-    console.log('%c🔥 HACK THE PLANET! 🔥', 'color: #6366f1; font-size: 24px; font-weight: bold;');
-    console.log('%c💻 You found the secret! Welcome to the matrix...', 'color: #8b5cf6; font-size: 16px;');
+    console.log('%c🦖 WELCOME TO JURASSIC PARK! 🦖', 'color: #6366f1; font-size: 24px; font-weight: bold;');
+    console.log('%c🌿 Life finds a way...', 'color: #8b5cf6; font-size: 16px;');
 }
 
 // Fun facts interaction
