@@ -84,7 +84,13 @@ function initProgressAnimation() {
             'Drawing architecture diagrams...',
             'Explaining microservices to stakeholders...',
             'Blaming the previous developer (me)...',
-            'Googling "why is my code not working"...'
+            'Googling "why is my code not working"...',
+            'Convincing stakeholders that "it works on my machine"...',
+            'Explaining why the bug is actually a feature...',
+            'Trying to remember what I was supposed to do...',
+            'Pretending to understand the requirements...',
+            'Adding more comments to hide the complexity...',
+            'Optimizing the optimization function...'
         ];
         
         let messageIndex = 0;
@@ -99,34 +105,6 @@ function initProgressAnimation() {
 
 // Accessibility enhancements
 function initAccessibility() {
-    // Add skip link for keyboard navigation
-    const skipLink = document.createElement('a');
-    skipLink.href = '#main';
-    skipLink.textContent = 'Skip to main content';
-    skipLink.className = 'skip-link';
-    skipLink.style.cssText = `
-        position: absolute;
-        top: -40px;
-        left: 6px;
-        background: #6366f1;
-        color: white;
-        padding: 8px;
-        text-decoration: none;
-        border-radius: 4px;
-        z-index: 1000;
-        transition: top 0.3s;
-    `;
-    
-    skipLink.addEventListener('focus', function() {
-        this.style.top = '6px';
-    });
-    
-    skipLink.addEventListener('blur', function() {
-        this.style.top = '-40px';
-    });
-    
-    document.body.insertBefore(skipLink, document.body.firstChild);
-    
     // Add main content ID
     const main = document.querySelector('main');
     if (main) {
@@ -156,9 +134,7 @@ style.textContent = `
         100% { transform: scale(1); }
     }
     
-    .skip-link:focus {
-        top: 6px !important;
-    }
+
 `;
 document.head.appendChild(style);
 
